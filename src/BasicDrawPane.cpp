@@ -1,4 +1,7 @@
 #include "BasicDrawPane.h"
+//#include "BarGraphSet.h"
+#include "BarGraph.h"
+
 
 BEGIN_EVENT_TABLE(BasicDrawPane, wxPanel)
 // some useful events
@@ -75,9 +78,21 @@ void BasicDrawPane::paintNow()
 void BasicDrawPane::render(wxDC& dc)
 {
     
-    /*
+    //BarGraphSet values;
+    BarGraph* test = new BarGraph(10);
+    std::string ds;
+    //test->setRange(100);
+
+    ds = "range: " + std::to_string(test->getRange());
+    
+
+    wxLogDebug("super");
+
+   
+
     // draw some text
-    dc.DrawText(wxT("Testing"), 40, 60);
+    dc.DrawText(ds.c_str(), 40, 60);
+    /*
 
     // draw a circle
     dc.SetBrush(*wxGREEN_BRUSH); // green filling

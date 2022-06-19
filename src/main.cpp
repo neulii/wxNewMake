@@ -1,5 +1,6 @@
 #include "main.h"
 #include "simple.h"
+#include "BarGraph.h"
 
 
 IMPLEMENT_APP(MyApp);
