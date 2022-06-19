@@ -10,7 +10,6 @@ BarGraph::BarGraph(int range, int value)
 	: range(range), value(value)
 	
 {
-	
 
 }
 

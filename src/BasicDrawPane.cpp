@@ -1,5 +1,5 @@
 #include "BasicDrawPane.h"
-//#include "BarGraphSet.h"
+#include "BarGraphSet.h"
 #include "BarGraph.h"
 
 
@@ -85,6 +85,7 @@ void BasicDrawPane::render(wxDC& dc)
 
     ds = "range: " + std::to_string(test->getRange());
    
+    BarGraphSet* set = new BarGraphSet(10,100);
 
    
 

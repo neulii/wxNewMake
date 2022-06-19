@@ -6,15 +6,18 @@ class BarGraphSet
 {
 private: 
 
-	std::vector<BarGraph>* values;
+	std::vector<BarGraph*> values;
 
 public:
 
 	BarGraphSet();
-	BarGraphSet(int numberOfGraphs);
+	BarGraphSet(int numberOfGraphs, int range);
 
 	void		addBarGraph(BarGraph* bg);
-	BarGraph	getBarGraphAt(int barGraphIndex);
+	BarGraph*	getBarGraphAt(int barGraphIndex);
 	void		removeBarGraph(int barGraphIndex);
+
+	int			getBarCounter();
+
 
 };
