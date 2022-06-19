@@ -84,9 +84,7 @@ void BasicDrawPane::render(wxDC& dc)
     //test->setRange(100);
 
     ds = "range: " + std::to_string(test->getRange());
-    
-
-    wxLogDebug("super");
+   
 
    
 

@@ -9,6 +9,7 @@ private:
 
 
 public:
+
 	BarGraph(int range);
 	BarGraph(int range, int value);
 
