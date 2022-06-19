@@ -18,7 +18,7 @@ EVT_PAINT(BasicDrawPane::paintEvent)
 
 END_EVENT_TABLE()
 
-
+//teständerung
 BasicDrawPane::BasicDrawPane(wxFrame* parent) :
     wxPanel(parent)
 {
