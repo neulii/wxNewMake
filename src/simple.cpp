@@ -1,10 +1,8 @@
 ﻿#include "simple.h"
 #include <OpenXLSX.hpp>
 
-#include <OpenXLSX.hpp>
 #include <iostream>
-#include <numeric>
-#include <random>
+
 
 
 using namespace std;
