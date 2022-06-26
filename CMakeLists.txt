@@ -6,19 +6,14 @@ PROJECT(${PROJ_NAME})
 set(CMAKE_CXX_STANDARD 17)
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 include_directories(include)
-add_subdirectory(OpenXLSX)
+
 
 file(GLOB SOURCES "src/*.cpp" "include/*.h")
 
-#wxinstallation on worknotebook
-SET(wxWidgets_ROOT_DIR "C://Neulii//wxWidgets-3.1.7")
 
-#wxinstallation on homebook
-SET(wxWidgets_ROOT_DIR "C://wxWidgets-3.1.6")
 
 find_package(wxWidgets REQUIRED COMPONENTS net core base)
 include(${wxWidgets_USE_FILE})
-
 
 
 if(WIN32)
@@ -29,4 +24,4 @@ else(WIN32)
 endif()
 
 #add_executable(${PROJ_NAME} ${SOURCES})
-target_link_libraries(${PROJ_NAME} ${wxWidgets_LIBRARIES} OpenXLSX::OpenXLSX)
+target_link_libraries(${PROJ_NAME} ${wxWidgets_LIBRARIES})

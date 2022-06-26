@@ -1,12 +1,10 @@
 ﻿#include "simple.h"
-#include <OpenXLSX.hpp>
 
 #include <iostream>
 
 
 
 using namespace std;
-using namespace OpenXLSX;
 
 
 Simple::Simple(const wxString& title)
